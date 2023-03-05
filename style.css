@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+.page {
+    background-color: #EAEDF0;
+    width: 900px;
+    margin: auto;
+
+    overflow: hidden;             /* By adding an overflow: hidden declaration to a container div, we’re telling it to recognize the height of any floated elements it contains. */
+}
+
+/* To summarize, when you have an extra unfloated HTML element at the bottom of a container div, use the clear solution. Otherwise, add an overflow: hidden declaration to the container element. */
+
+.container {
+    background-color: #EAEDF0;
+
+    overflow: hidden;
+}
+
 .menu {
     background-color: #B2D6FF;
     height: 100px;
@@ -13,14 +29,76 @@
     background-color: #F09A9D;
     height: 300px;
     width: 200px;
+
+    float: left;
 }
 
 .content {
     background-color: #F5CF8E;
     height: 500px;
+    width: 650px;
+
+    padding: 20px;
+
+    float: left;
+}
+
+.article-image {
+    width: 300px;
+    height: 200px;
+
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    float: left;
+}
+
+p {
+    margin-bottom: 20px;
 }
 
 .footer {
     background-color: #D6E9FE;
-    height: 200px;
+
+    overflow: hidden;
+
+    clear: both;                    /* Cleared element always appears after any floats */
+}
+
+/* To summarize, when you have an extra unfloated HTML element at the bottom of a container div, use the clear solution. Otherwise, add an overflow: hidden declaration to the container element. */
+
+.footer-item {
+    background-color: #B2D6FF;
+
+    width: 31%;
+    height: 160px;
+
+    margin: 20px 1.15%;
+
+    float: left; 
+}
+
+.avatar {
+    background-color: #D6E9FE;
+
+    width: 60px;
+    height: 60px;
+    margin: 25px;
+    border-radius: 40px;
+
+    float: left;
+}
+  
+.username {
+    margin-top: 30px;
+}
+
+.comment.one {
+    margin: 10px;
+
+    overflow: hidden;
+}
+
+.comment.two {
+    margin: 10px;
 }
