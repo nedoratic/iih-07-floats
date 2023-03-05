@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    background-color: #B2D6FF;
+    height: 100px;
+}
+  
+.sidebar {
+    background-color: #F09A9D;
+    height: 300px;
+    width: 200px;
+}
+
+.content {
+    background-color: #F5CF8E;
+    height: 500px;
+}
+
+.footer {
+    background-color: #D6E9FE;
+    height: 200px;
+}
